@@ -17,6 +17,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *versionOC = @"10.3.2";
+    NSString *resultVersion = @"";
+    NSArray *arrry = [versionOC componentsSeparatedByString:@"."];
+    if (1 == arrry.count) {
+        resultVersion = [arrry objectAtIndex:0];
+    }
+    else {
+        for (NSInteger i = 0; i < 2; i++) {
+            resultVersion = [resultVersion stringByAppendingString:(0 == i)?[arrry objectAtIndex:i]:[NSString stringWithFormat:@".%@", [arrry objectAtIndex:i]]];
+        }
+    }
+    float f = resultVersion.floatValue;
+    double d = resultVersion.doubleValue;
+    CGFloat ff1 = 123.5f;
+    CGFloat ff2 = 123.2f;
+    CGFloat ff3 = 123.8f;
+    NSInteger ii1 = ff1;
+    NSInteger ii2 = ff2;
+    NSInteger ii3 = ff3;
     return YES;
 }
 

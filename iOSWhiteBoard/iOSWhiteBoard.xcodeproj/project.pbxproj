@@ -13,6 +13,7 @@
 		8577EE2F1E84D16000375377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8577EE2D1E84D16000375377 /* Main.storyboard */; };
 		8577EE311E84D16000375377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8577EE301E84D16000375377 /* Assets.xcassets */; };
 		8577EE341E84D16000375377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8577EE321E84D16000375377 /* LaunchScreen.storyboard */; };
+		8577EE511E85092200375377 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8577EE501E85092200375377 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8577EE301E84D16000375377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8577EE331E84D16000375377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8577EE351E84D16100375377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8577EE501E85092200375377 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8577EE511E85092200375377 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				8577EE231E84D16000375377 /* iOSWhiteBoard */,
 				8577EE221E84D16000375377 /* Products */,
+				8577EE4F1E85092200375377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +81,14 @@
 				8577EE251E84D16000375377 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8577EE4F1E85092200375377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8577EE501E85092200375377 /* EventKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +324,7 @@
 				8577EE3A1E84D16100375377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
